@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Salle 906 - Salle d&#x27;actualités du département des peintures</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    
+<div class="topbar">
+  <div class="brand">
+	    <div class="brand-row">
+	      <img class="ng-logo" src="../assets/brand/logo-louvre.svg" alt="Musee du Louvre" />
+	      <div>
+	        <div class="subhead">On-View Atlas</div>
+	        <h1>Salle 906 - Salle d&#x27;actualités du département des peintures</h1>
+	      </div>
+	    </div>
+	    <div class="meta">Plan room. Works: 0.</div>
+	  </div>
+	  <div class="tools">
+	    <div class="tool-row">
+	      <a class="back" href="../index.html">Back to rooms</a>
+	      <span class="pill"><a href="https://collections.louvre.fr/en/recherche?location%5B0%5D=291954" target="_blank" rel="noreferrer">Source page</a></span>
+	    </div>
+	  </div>
+	</div>
+<div class="wrap">
+  <div class="room-sub">
+    <span class="pill">Room URL: https://collections.louvre.fr/en/recherche?location%5B0%5D=291954</span>
+  </div>
+  <div class="works">
+    <div class="card"><div class="hd"><p class="t">No works listed</p></div><div class="bd">This room page did not expose a structured &quot;Works in this room&quot; list at scrape time.</div></div>
+  </div>
+	  <div class="footer">Generated from Louvre plan rooms (collections.louvre.fr)</div>
+	</div>
+	<div class="lightbox" id="lb" aria-hidden="true">
+  <div class="lb-bar">
+    <div>Tap image to toggle zoom. Drag/scroll when zoomed.</div>
+    <div style="display:flex; gap:10px; align-items:center;">
+      <button class="lb-btn" type="button" id="lbZoom">Zoom 2x</button>
+      <button class="lb-btn" type="button" id="lbClose">Close</button>
+    </div>
+  </div>
+  <div class="lb-canvas" id="lbCanvas">
+    <img class="lb-img" id="lbImg" alt="Artwork" />
+  </div>
+</div>
+<script>
+  const lb = document.getElementById('lb');
+  const lbImg = document.getElementById('lbImg');
+  const lbCanvas = document.getElementById('lbCanvas');
+  const btnClose = document.getElementById('lbClose');
+  const btnZoom = document.getElementById('lbZoom');
+  function openLb(src){
+    lb.classList.add('open');
+    lb.setAttribute('aria-hidden','false');
+    lbCanvas.classList.remove('zoom2');
+    btnZoom.textContent = 'Zoom 2x';
+    lbImg.src = src;
+    lbCanvas.scrollTop = 0;
+    lbCanvas.scrollLeft = 0;
+  }
+  function closeLb(){
+    lb.classList.remove('open');
+    lb.setAttribute('aria-hidden','true');
+    lbImg.removeAttribute('src');
+  }
+  document.addEventListener('click', (e) => {
+    const t = e.target;
+    if (t && t.classList && t.classList.contains('zoomable')) {
+      e.preventDefault();
+      e.stopPropagation();
+      openLb(t.getAttribute('data-full') || t.getAttribute('src'));
+      return;
+    }
+    if (t === lb) closeLb();
+  }, { passive: false });
+  btnClose.addEventListener('click', closeLb);
+  btnZoom.addEventListener('click', () => {
+    const z = lbCanvas.classList.toggle('zoom2');
+    btnZoom.textContent = z ? 'Zoom 1x' : 'Zoom 2x';
+  });
+  lbImg.addEventListener('click', () => {
+    const z = lbCanvas.classList.toggle('zoom2');
+    btnZoom.textContent = z ? 'Zoom 1x' : 'Zoom 2x';
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLb();
+  });
+</script>
+	
+  </body>
+</html>

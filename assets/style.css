@@ -24,6 +24,7 @@ body{
 a{ color: var(--accent); text-decoration: none; }
 a:hover{ text-decoration: underline; }
 .rating{ font: 700 12px/1 var(--sans); color: #7a4b00; }
+.dims{ font: 600 11px/1 var(--sans); color: var(--muted); }
 .wrap{ max-width: 1180px; margin: 0 auto; padding: 28px 18px 60px; }
 .topbar{
   display:flex; gap:12px; align-items:flex-end; justify-content:space-between;

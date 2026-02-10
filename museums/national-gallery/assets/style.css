@@ -233,6 +233,18 @@ details.work summary::-webkit-details-marker{ display:none; }
     height: 40px;
   }
 }
+
+/* Make the header controls wrap cleanly on mid-size mobile/tablet widths. */
+@media (max-width: 920px){
+  .tool-row{
+    justify-content: flex-start;
+  }
+  .tools input{
+    width: 100%;
+    min-width: 0;
+    flex: 1 1 100%;
+  }
+}
 .lightbox{
   position: fixed;
   inset: 0;

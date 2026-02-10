@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>On-View Atlas: Louvre 5-star tour</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+    <style>
+      .tour-wrap { max-width: 980px; margin: 0 auto; padding: 18px 14px 60px; }
+      .tour-hero { margin: 14px 0 14px; }
+      .tour-hero h2 { margin: 0; font: 900 22px/1.1 var(--serif); }
+      .tour-hero p { margin: 8px 0 0; color: var(--muted); font-size: 13px; }
+      .brand-row { display:flex; gap:12px; align-items:center; }
+      .ng-logo { width: 40px; height: 40px; border-radius: 12px; border: 1px solid var(--line); background: rgba(12,107,90,.10); object-fit: contain; padding: 6px; }
+      .subhead { font: 700 12px/1.1 var(--sans); color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
+      details.tour-room { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+      details.tour-room + details.tour-room { margin-top: 10px; }
+      details.tour-room summary { list-style:none; cursor:pointer; padding: 12px 12px; display:flex; gap:10px; align-items:baseline; justify-content:space-between; }
+      details.tour-room summary::-webkit-details-marker{ display:none; }
+      .room-left { min-width: 0; }
+      .room-name { margin:0; font: 800 15px/1.2 var(--serif); }
+      .room-meta { margin-top: 6px; color: var(--muted); font-size: 12px; display:flex; flex-wrap:wrap; gap:10px; }
+      .count { white-space: nowrap; color: var(--muted); font-size: 12px; }
+      .tour-list { padding: 0 12px 12px; border-top: 1px solid var(--line); }
+      .work-row { display:grid; grid-template-columns: 64px 1fr; gap: 10px; padding: 10px 0; border-bottom: 1px dashed rgba(31,35,40,.14); }
+      .work-row:last-child { border-bottom: 0; }
+      .work-thumb { width:64px; height:64px; border-radius: 14px; border: 1px solid var(--line); object-fit: cover; background:#efe8da; }
+      .work-title { margin:0; font: 800 14px/1.15 var(--serif); }
+      .work-meta { margin-top: 6px; color: var(--muted); font-size: 12px; display:flex; flex-wrap:wrap; gap:10px; }
+      .badge { display:inline-flex; align-items:center; gap:6px; padding: 4px 8px; border-radius: 999px; border: 1px solid var(--line); background: rgba(255,255,255,.6); }
+      .lightbox{ position: fixed; inset:0; background: rgba(15,18,20,.86); display:none; z-index:999; }
+      .lightbox.open{ display:block; }
+      .lb-bar{ position:absolute; top:10px; left:10px; right:10px; display:flex; gap:10px; justify-content:space-between; align-items:center; color:rgba(255,255,255,.92); font-size:12px; font-family: var(--sans); }
+      .lb-btn{ appearance:none; border:1px solid rgba(255,255,255,.28); background: rgba(255,255,255,.10); color:rgba(255,255,255,.92); padding:8px 10px; border-radius:999px; }
+      .lb-canvas{ position:absolute; inset:52px 10px 10px; overflow:auto; -webkit-overflow-scrolling: touch; border-radius:14px; }
+      .lb-img{ display:block; max-width:min(1200px, 92vw); max-height:84vh; margin:0 auto; border-radius:14px; box-shadow: 0 20px 50px rgba(0,0,0,.35); }
+      .lb-canvas.zoom2 .lb-img{ max-width:none; max-height:none; width:200%; height:auto; }
+    </style>
+  </head>
+  <body>
+    
+	<div class="topbar">
+	  <div class="brand">
+	    <div class="brand-row">
+	      <img class="ng-logo" src="../assets/brand/logo-louvre.svg" alt="Musee du Louvre" />
+	      <div>
+	        <div class="subhead">Musee du Louvre, Paris</div>
+	        <h1>On-View Atlas: Louvre 5-star tour</h1>
+	      </div>
+	    </div>
+	    <div class="meta">Primary: room order. Secondary: creation year.</div>
+	  </div>
+	  <div class="tools">
+	    <a class="back" href="../index.html">Back to rooms</a>
+	    <span class="pill"><a href="../../index.html">All museums</a></span>
+	    <span class="pill">Generated at: 2026-02-10T23:25:35Z</span>
+	  </div>
+	</div>
+<div class="tour-wrap">
+  <div class="tour-hero">
+    <h2>Total 5-star works: 0</h2>
+    <p>Tap a room to expand. Inside each room, works are sorted by the earliest year we can parse.</p>
+  </div>
+  <div class="card"><div class="hd"><p class="t">No 5-star works found</p></div></div>
+	  <div class="footer">Source dataset: out/louvre.rooms.json</div>
+	</div>
+	<div class="lightbox" id="lb" aria-hidden="true">
+  <div class="lb-bar">
+    <div>Tap image to toggle zoom. Drag/scroll when zoomed.</div>
+    <div style="display:flex; gap:10px; align-items:center;">
+      <button class="lb-btn" type="button" id="lbZoom">Zoom 2x</button>
+      <button class="lb-btn" type="button" id="lbClose">Close</button>
+    </div>
+  </div>
+  <div class="lb-canvas" id="lbCanvas">
+    <img class="lb-img" id="lbImg" alt="Artwork" />
+  </div>
+</div>
+<script>
+  const lb = document.getElementById('lb');
+  const lbImg = document.getElementById('lbImg');
+  const lbCanvas = document.getElementById('lbCanvas');
+  const btnClose = document.getElementById('lbClose');
+  const btnZoom = document.getElementById('lbZoom');
+  function openLb(src){
+    lb.classList.add('open');
+    lb.setAttribute('aria-hidden','false');
+    lbCanvas.classList.remove('zoom2');
+    btnZoom.textContent = 'Zoom 2x';
+    lbImg.src = src;
+    lbCanvas.scrollTop = 0;
+    lbCanvas.scrollLeft = 0;
+  }
+  function closeLb(){
+    lb.classList.remove('open');
+    lb.setAttribute('aria-hidden','true');
+    lbImg.removeAttribute('src');
+  }
+  document.addEventListener('click', (e) => {
+    const t = e.target;
+    if (t && t.classList && t.classList.contains('zoomable')) {
+      e.preventDefault();
+      e.stopPropagation();
+      openLb(t.getAttribute('data-full') || t.getAttribute('src'));
+      return;
+    }
+    if (t === lb) closeLb();
+  }, { passive: false });
+  btnClose.addEventListener('click', closeLb);
+  btnZoom.addEventListener('click', () => {
+    const z = lbCanvas.classList.toggle('zoom2');
+    btnZoom.textContent = z ? 'Zoom 1x' : 'Zoom 2x';
+  });
+  lbImg.addEventListener('click', () => {
+    const z = lbCanvas.classList.toggle('zoom2');
+    btnZoom.textContent = z ? 'Zoom 1x' : 'Zoom 2x';
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLb();
+  });
+</script>
+	
+  </body>
+</html>

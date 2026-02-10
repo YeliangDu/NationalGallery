@@ -1,0 +1,1198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>On-View Atlas: National Gallery 5-star tour</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+    <style>
+      .tour-wrap { max-width: 980px; margin: 0 auto; padding: 18px 14px 60px; }
+      .tour-hero { margin: 14px 0 14px; }
+      .tour-hero h2 { margin: 0; font: 900 22px/1.1 var(--serif); }
+      .tour-hero p { margin: 8px 0 0; color: var(--muted); font-size: 13px; }
+      .brand-row { display:flex; gap:12px; align-items:center; }
+      .ng-logo { width: 40px; height: 40px; border-radius: 12px; border: 1px solid var(--line); background: rgba(12,107,90,.10); object-fit: contain; padding: 6px; }
+      .subhead { font: 700 12px/1.1 var(--sans); color: var(--muted); letter-spacing: .08em; text-transform: uppercase; }
+      details.tour-room { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; }
+      details.tour-room + details.tour-room { margin-top: 10px; }
+      details.tour-room summary { list-style:none; cursor:pointer; padding: 12px 12px; display:flex; gap:10px; align-items:baseline; justify-content:space-between; }
+      details.tour-room summary::-webkit-details-marker{ display:none; }
+      .room-left { min-width: 0; }
+      .room-name { margin:0; font: 800 15px/1.2 var(--serif); }
+      .room-meta { margin-top: 6px; color: var(--muted); font-size: 12px; display:flex; flex-wrap:wrap; gap:10px; }
+      .count { white-space: nowrap; color: var(--muted); font-size: 12px; }
+      .tour-list { padding: 0 12px 12px; border-top: 1px solid var(--line); }
+      .work-row { display:grid; grid-template-columns: 64px 1fr; gap: 10px; padding: 10px 0; border-bottom: 1px dashed rgba(31,35,40,.14); }
+      .work-row:last-child { border-bottom: 0; }
+      .work-thumb { width:64px; height:64px; border-radius: 14px; border: 1px solid var(--line); object-fit: cover; background:#efe8da; }
+      .work-title { margin:0; font: 800 14px/1.15 var(--serif); }
+      .work-meta { margin-top: 6px; color: var(--muted); font-size: 12px; display:flex; flex-wrap:wrap; gap:10px; }
+      .badge { display:inline-flex; align-items:center; gap:6px; padding: 4px 8px; border-radius: 999px; border: 1px solid var(--line); background: rgba(255,255,255,.6); }
+      .lightbox{ position: fixed; inset:0; background: rgba(15,18,20,.86); display:none; z-index:999; }
+      .lightbox.open{ display:block; }
+      .lb-bar{ position:absolute; top:10px; left:10px; right:10px; display:flex; gap:10px; justify-content:space-between; align-items:center; color:rgba(255,255,255,.92); font-size:12px; font-family: var(--sans); }
+      .lb-btn{ appearance:none; border:1px solid rgba(255,255,255,.28); background: rgba(255,255,255,.10); color:rgba(255,255,255,.92); padding:8px 10px; border-radius:999px; }
+      .lb-canvas{ position:absolute; inset:52px 10px 10px; overflow:auto; -webkit-overflow-scrolling: touch; border-radius:14px; }
+      .lb-img{ display:block; max-width:min(1200px, 92vw); max-height:84vh; margin:0 auto; border-radius:14px; box-shadow: 0 20px 50px rgba(0,0,0,.35); }
+      .lb-canvas.zoom2 .lb-img{ max-width:none; max-height:none; width:200%; height:auto; }
+    </style>
+  </head>
+  <body>
+    
+	<div class="topbar">
+	  <div class="brand">
+	    <div class="brand-row">
+	      <img class="ng-logo" src="../assets/brand/ng-logo-white-320.png" alt="The National Gallery" />
+	      <div>
+	        <div class="subhead">The National Gallery, London</div>
+	        <h1>On-View Atlas: National Gallery 5-star tour</h1>
+	      </div>
+	    </div>
+	    <div class="meta">Primary: room order. Secondary: creation year.</div>
+	  </div>
+	  <div class="tools">
+	    <a class="back" href="../index.html">Back to rooms</a>
+	    <span class="pill"><a href="../../index.html">All museums</a></span>
+	    <span class="pill">Generated at: 2026-02-10T18:49:24Z</span>
+	  </div>
+	</div>
+<div class="tour-wrap">
+  <div class="tour-hero">
+    <h2>Total 5-star works: 69</h2>
+    <p>Tap a room to expand. Inside each room, works are sorted by the earliest year we can parse.</p>
+  </div>
+  
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 2</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-2.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-2" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">2 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG790.jpg" data-full="https://www.nationalgallery.org.uk/media/ecmbotsl/n-0790-00-000203-xl-hd.jpg?rxy=0.47136563876651982,0.21384928716904278&amp;width=800&amp;height=800&amp;v=1dbcbe4873aeed0" alt="Michelangelo, &#x27;The Entombment (or Christ being carried to his Tomb)&#x27;, about 1500-1" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Michelangelo, &#x27;The Entombment (or Christ being carried to his Tomb)&#x27;, about 1500-1</p>
+    <div class="work-meta">
+      <span class="badge"><b>1500</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG790</b> ID</span><span class="badge"><b>Michelangelo</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/michelangelo-the-entombment-or-christ-being-carried-to-his-tomb" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG1.jpg" data-full="https://www.nationalgallery.org.uk/media/0cdn2di4/n-0001-00-000075-fs-hd.jpg?rxy=0.33406593406593404,0.3946932006633499&amp;width=800&amp;height=800&amp;v=1dbcbd3b3d3c5e0" alt="Sebastiano del Piombo, incorporating designs by Michelangelo, &#x27;The Raising of Lazarus&#x27;, 1517-19" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Sebastiano del Piombo, incorporating designs by Michelangelo, &#x27;The Raising of Lazarus&#x27;, 1517-19</p>
+    <div class="work-meta">
+      <span class="badge"><b>1517</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG1</b> ID</span><span class="badge"><b>Sebastiano del Piombo , incorporating designs by Michelangelo</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/sebastiano-del-piombo-incorporating-designs-by-michelangelo-the-raising-of-lazarus" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 7</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-7.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-7" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">1 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG744.jpg" data-full="https://www.nationalgallery.org.uk/media/wg0lbfck/n-0744-00-000084-xl-hd.jpg?rxy=0.496763839734986,0.28323518151018584&amp;width=800&amp;height=800&amp;v=1dbcbe2a529f780" alt="Raphael, &#x27;The Garvagh Madonna&#x27;, about 1510-11" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Raphael, &#x27;The Garvagh Madonna&#x27;, about 1510-11</p>
+    <div class="work-meta">
+      <span class="badge"><b>1510</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG744</b> ID</span><span class="badge"><b>Raphael</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/raphael-the-garvagh-madonna" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 8</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-8.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-8" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">9 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG5385.jpg" data-full="https://www.nationalgallery.org.uk/media/ttznl1g0/n-5385-00-000085-fs-hd.jpg?rxy=0.4358974358974359,0.29326923076923078&amp;width=800&amp;height=800&amp;v=1dbcca23d3f79e0" alt="Titian, &#x27;Portrait of a Lady (&#x27;La Schiavona&#x27;)&#x27;, about 1510-12" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Titian, &#x27;Portrait of a Lady (&#x27;La Schiavona&#x27;)&#x27;, about 1510-12</p>
+    <div class="work-meta">
+      <span class="badge"><b>1510</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG5385</b> ID</span><span class="badge"><b>Titian</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/titian-portrait-of-a-lady-la-schiavona" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG4.jpg" data-full="https://www.nationalgallery.org.uk/media/edfkbbrc/n-0004-00-000083-fs-hd.jpg?rxy=0.37582417582417582,0.29819277108433734&amp;width=800&amp;height=800&amp;v=1dbcbd3bf669270" alt="Titian, &#x27;The Holy Family with a Shepherd&#x27;, about 1510" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Titian, &#x27;The Holy Family with a Shepherd&#x27;, about 1510</p>
+    <div class="work-meta">
+      <span class="badge"><b>1510</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG4</b> ID</span><span class="badge"><b>Titian</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/titian-the-holy-family-with-a-shepherd" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/L1368.jpg" data-full="https://www.nationalgallery.org.uk/media/sk0hrpsx/l-1368-00-000003-web-hd.jpg?width=800&amp;height=800&amp;v=1dbcbd3a19276b0" alt="Titian, &#x27;The Rest on the Flight into Egypt&#x27;, about 1512?" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Titian, &#x27;The Rest on the Flight into Egypt&#x27;, about 1512?</p>
+    <div class="work-meta">
+      <span class="badge"><b>1512</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>L1368</b> ID</span><span class="badge"><b>Titian</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/titian-the-rest-on-the-flight-into-egypt" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG270.jpg" data-full="https://www.nationalgallery.org.uk/media/ypdnsiy0/n-0270-00-000149-fs-hd.jpg?rxy=0.34527687296416937,0.45405405405405408&amp;width=800&amp;height=800&amp;v=1dbcbdb9d1902e0" alt="Titian, &#x27;Noli me Tangere&#x27;, about 1514" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Titian, &#x27;Noli me Tangere&#x27;, about 1514</p>
+    <div class="work-meta">
+      <span class="badge"><b>1514</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG270</b> ID</span><span class="badge"><b>Titian</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/titian-noli-me-tangere" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG35.jpg" data-full="https://www.nationalgallery.org.uk/media/05hpb5is/n-0035-00-000181-xl-hd.jpg?rxy=0.4043010752688172,0.39573459715639808&amp;width=800&amp;height=800&amp;v=1dbcbd649535700" alt="Titian, &#x27;Bacchus and Ariadne&#x27;, 1520-3" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Titian, &#x27;Bacchus and Ariadne&#x27;, 1520-3</p>
+    <div class="work-meta">
+      <span class="badge"><b>1520</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG35</b> ID</span><span class="badge"><b>Titian</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/titian-bacchus-and-ariadne" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6611.jpg" data-full="https://www.nationalgallery.org.uk/media/vowfbrie/n-6611-00-000199-xl-hd.jpg?rxy=0.87536231884057969,0.49843260188087773&amp;width=800&amp;height=800&amp;v=1dbccadb9e39570" alt="Titian, &#x27;Diana and Actaeon&#x27;, 1556-9" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Titian, &#x27;Diana and Actaeon&#x27;, 1556-9</p>
+    <div class="work-meta">
+      <span class="badge"><b>1556</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 2/2</span><span class="badge"><b>NG6611</b> ID</span><span class="badge"><b>Titian</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/titian-diana-and-actaeon" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6616.jpg" data-full="https://www.nationalgallery.org.uk/media/obxpdhou/n-6616-00-000080-xl-hd.jpg?rxy=0.73333333333333328,0.40378548895899052&amp;width=800&amp;height=800&amp;v=1dbccae22052560" alt="Titian, &#x27;Diana and Callisto&#x27;, 1556-9" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Titian, &#x27;Diana and Callisto&#x27;, 1556-9</p>
+    <div class="work-meta">
+      <span class="badge"><b>1556</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG6616</b> ID</span><span class="badge"><b>Titian</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/titian-diana-and-callisto" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG224.jpg" data-full="https://www.nationalgallery.org.uk/media/czmlooc2/n-0224-00-000076-fs-hd.jpg?rxy=0.46813186813186813,0.29980276134122286&amp;width=800&amp;height=800&amp;v=1dbcbda345e5cb0" alt="Titian, &#x27;The Tribute Money&#x27;, about 1560-8 (perhaps begun in the 1540s)" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Titian, &#x27;The Tribute Money&#x27;, about 1560-8 (perhaps begun in the 1540s)</p>
+    <div class="work-meta">
+      <span class="badge"><b>1560</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG224</b> ID</span><span class="badge"><b>Titian</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/titian-the-tribute-money" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG3948.jpg" data-full="https://www.nationalgallery.org.uk/media/2kapyjhu/n-3948-00-000027-web-hd.jpg?rxy=0.44833061098609889,0.27749138221806519&amp;width=800&amp;height=800&amp;v=1dbcc9e89bd1150" alt="Titian, &#x27;The Virgin suckling the Infant Christ&#x27;, about 1565-75" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Titian, &#x27;The Virgin suckling the Infant Christ&#x27;, about 1565-75</p>
+    <div class="work-meta">
+      <span class="badge"><b>1565</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG3948</b> ID</span><span class="badge"><b>Titian</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/titian-the-virgin-suckling-the-infant-christ" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 15</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-15.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-15" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">3 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG1944.jpg" data-full="https://www.nationalgallery.org.uk/media/a25nfxts/n-1944-00-000051-web-hd.jpg?rxy=0.49645390070921985,0.27007299270072993&amp;width=800&amp;height=800&amp;v=1dbcbf200731db0" alt="Titian, &#x27;Portrait of Gerolamo (?) Barbarigo&#x27;, about 1510" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Titian, &#x27;Portrait of Gerolamo (?) Barbarigo&#x27;, about 1510</p>
+    <div class="work-meta">
+      <span class="badge"><b>1510</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG1944</b> ID</span><span class="badge"><b>Titian</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/titian-portrait-of-gerolamo-barbarigo" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG852.jpg" data-full="https://www.nationalgallery.org.uk/media/5eyagk04/n-0852-00-000084-xl-hd.jpg?rxy=0.40356372528816165,0.3296047518596647&amp;width=800&amp;height=800&amp;v=1dbcbe5fa458150" alt="Peter Paul Rubens, &#x27;Portrait of Susanna Lunden(?) (&#x27;Le Chapeau de Paille&#x27;)&#x27;, probably 1622-5" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Peter Paul Rubens, &#x27;Portrait of Susanna Lunden(?) (&#x27;Le Chapeau de Paille&#x27;)&#x27;, probably 1622-5</p>
+    <div class="work-meta">
+      <span class="badge"><b>1622</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG852</b> ID</span><span class="badge"><b>Peter Paul Rubens</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/peter-paul-rubens-portrait-of-susanna-lunden-le-chapeau-de-paille" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG672.jpg" data-full="https://www.nationalgallery.org.uk/media/rzspv1nn/n-0672-00-000059-xl-hd.jpg?rxy=0.44562899786780386,0.36559139784946237&amp;width=800&amp;height=800&amp;v=1dbcbe0dc12e420" alt="Rembrandt, &#x27;Self Portrait at the Age of 34&#x27;, 1640" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Rembrandt, &#x27;Self Portrait at the Age of 34&#x27;, 1640</p>
+    <div class="work-meta">
+      <span class="badge"><b>1640</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG672</b> ID</span><span class="badge"><b>Rembrandt</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/rembrandt-self-portrait-at-the-age-of-34" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 16</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-16.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-16" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">1 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG1383.jpg" data-full="https://www.nationalgallery.org.uk/media/a42b2bbf/n-1383-00-000109-xl-hd.jpg?rxy=0.4999935602417914,0.43815338269541715&amp;width=800&amp;height=800&amp;v=1dbcbef9db5ef10" alt="Johannes Vermeer, &#x27;A Young Woman standing at a Virginal&#x27;, about 1670-2" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Johannes Vermeer, &#x27;A Young Woman standing at a Virginal&#x27;, about 1670-2</p>
+    <div class="work-meta">
+      <span class="badge"><b>1670</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG1383</b> ID</span><span class="badge"><b>Johannes Vermeer</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/johannes-vermeer-a-young-woman-standing-at-a-virginal" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 18</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-18.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-18" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">4 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6461.jpg" data-full="https://www.nationalgallery.org.uk/media/l2mfioag/n-6461-00-000097-xl-hd.jpg?rxy=0.3559322033898305,0.484375&amp;width=800&amp;height=800&amp;v=1dbcca952155270" alt="Peter Paul Rubens, &#x27;Samson and Delilah&#x27;, about 1609-10" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Peter Paul Rubens, &#x27;Samson and Delilah&#x27;, about 1609-10</p>
+    <div class="work-meta">
+      <span class="badge"><b>1609</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG6461</b> ID</span><span class="badge"><b>Peter Paul Rubens</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/peter-paul-rubens-samson-and-delilah" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG57.3.jpg" data-full="https://www.nationalgallery.org.uk/media/ujkh2xi0/n-0057-03-000045-fs-hd.jpg?rxy=0.47692307692307695,0.36003303055326175&amp;width=800&amp;height=800&amp;v=1dbcbd6e99bbfe0" alt="Peter Paul Rubens, &#x27;Kings Clothar and Dagobert dispute with a Herald&#x27;, 1611-12" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Peter Paul Rubens, &#x27;Kings Clothar and Dagobert dispute with a Herald&#x27;, 1611-12</p>
+    <div class="work-meta">
+      <span class="badge"><b>1611</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG57.3</b> ID</span><span class="badge"><b>Peter Paul Rubens</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/peter-paul-rubens-kings-clothar-and-dagobert-dispute-with-a-herald" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG57.1.jpg" data-full="https://www.nationalgallery.org.uk/media/oobdmwqo/n-0057-01-000056-fs-hd.jpg?rxy=0.4043956043956044,0.307426597582038&amp;width=800&amp;height=800&amp;v=1dbcbd6e4450510" alt="Peter Paul Rubens, &#x27;Saint Bavo is received by Saints Amand and Floribert&#x27;, 1611-12" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Peter Paul Rubens, &#x27;Saint Bavo is received by Saints Amand and Floribert&#x27;, 1611-12</p>
+    <div class="work-meta">
+      <span class="badge"><b>1611</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG57.1</b> ID</span><span class="badge"><b>Peter Paul Rubens</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/peter-paul-rubens-saint-bavo-is-received-by-saints-amand-and-floribert" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG57.2.jpg" data-full="https://www.nationalgallery.org.uk/media/q1rpz42r/n-0057-02-000045-web-hd.jpg?rxy=0.36043956043956044,0.26694214876033057&amp;width=800&amp;height=800&amp;v=1dbcbd6e6fd6e50" alt="Peter Paul Rubens, &#x27;Three Female Witnesses&#x27;, 1611-12" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Peter Paul Rubens, &#x27;Three Female Witnesses&#x27;, 1611-12</p>
+    <div class="work-meta">
+      <span class="badge"><b>1611</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG57.2</b> ID</span><span class="badge"><b>Peter Paul Rubens</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/peter-paul-rubens-three-female-witnesses" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 20</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-20.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-20" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">1 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG66.jpg" data-full="https://www.nationalgallery.org.uk/media/1mqpatj4/n-0066-00-000205-xl-hd.jpg?rxy=0.22387032611650928,0.5839558862915991&amp;width=800&amp;height=800&amp;v=1dbcbd74ebd5640" alt="Peter Paul Rubens, &#x27;A View of Het Steen in the Early Morning&#x27;, probably 1636" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Peter Paul Rubens, &#x27;A View of Het Steen in the Early Morning&#x27;, probably 1636</p>
+    <div class="work-meta">
+      <span class="badge"><b>1636</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG66</b> ID</span><span class="badge"><b>Peter Paul Rubens</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/peter-paul-rubens-a-view-of-het-steen-in-the-early-morning" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 22</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-22.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-22" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">8 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG3214.jpg" data-full="https://www.nationalgallery.org.uk/media/llyccoik/n-3214-00-000013-web-hd.jpg?rxy=0.39777777777777779,0.47752808988764045&amp;width=800&amp;height=800&amp;v=1dbcbfa8b7d5170" alt="Follower of Rembrandt, &#x27;A Man seated reading at a Table in a Lofty Room&#x27;, about 1628-30" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Follower of Rembrandt, &#x27;A Man seated reading at a Table in a Lofty Room&#x27;, about 1628-30</p>
+    <div class="work-meta">
+      <span class="badge"><b>1628</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG3214</b> ID</span><span class="badge"><b>Follower of Rembrandt</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/follower-of-rembrandt-a-man-seated-reading-at-a-table-in-a-lofty-room" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG775.jpg" data-full="https://www.nationalgallery.org.uk/media/0lapgyxs/n-0775-00-000031-web-hd.jpg?rxy=0.45814977973568283,0.36443661971830987&amp;width=800&amp;height=800&amp;v=1dbcbe39abe2950" alt="Rembrandt, &#x27;Portrait of Aechje Claesdr.&#x27;, 1634" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Rembrandt, &#x27;Portrait of Aechje Claesdr.&#x27;, 1634</p>
+    <div class="work-meta">
+      <span class="badge"><b>1634</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG775</b> ID</span><span class="badge"><b>Rembrandt</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/rembrandt-portrait-of-aechje-claesdr" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6274.jpg" data-full="https://www.nationalgallery.org.uk/media/odsoz1xa/n-6274-00-000046-fs-hd.jpg?rxy=0.35698924731182796,0.31516183986371382&amp;width=800&amp;height=800&amp;v=1dbcca4b0d3b950" alt="Probably by Rembrandt, &#x27;An Old Man in an Armchair&#x27;, 1650s" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Probably by Rembrandt, &#x27;An Old Man in an Armchair&#x27;, 1650s</p>
+    <div class="work-meta">
+      <span class="badge"><b>1650</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG6274</b> ID</span><span class="badge"><b>Probably by Rembrandt</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/probably-by-rembrandt-an-old-man-in-an-armchair" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG54.jpg" data-full="https://www.nationalgallery.org.uk/media/sdpjzdzb/n-0054-00-000035-web-hd.jpg?rxy=0.52307692307692311,0.29783693843594011&amp;width=800&amp;height=800&amp;v=1dbcbd6d756ee40" alt="Rembrandt, &#x27;A Woman bathing in a Stream (Hendrickje Stoffels?)&#x27;, 1654" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Rembrandt, &#x27;A Woman bathing in a Stream (Hendrickje Stoffels?)&#x27;, 1654</p>
+    <div class="work-meta">
+      <span class="badge"><b>1654</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG54</b> ID</span><span class="badge"><b>Rembrandt</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/rembrandt-a-woman-bathing-in-a-stream-hendrickje-stoffels" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG5282.jpg" data-full="https://www.nationalgallery.org.uk/media/yqqd2t1t/n-5282-00-000026-web-hd.jpg?rxy=0.47175141242937851,0.35498839907192575&amp;width=800&amp;height=800&amp;v=1dbcca22d64a360" alt="Probably by Rembrandt, &#x27;Portrait of Margaretha de Geer, Wife of Jacob Trip&#x27;, 1661" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Probably by Rembrandt, &#x27;Portrait of Margaretha de Geer, Wife of Jacob Trip&#x27;, 1661</p>
+    <div class="work-meta">
+      <span class="badge"><b>1661</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG5282</b> ID</span><span class="badge"><b>Probably by Rembrandt</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/probably-by-rembrandt-portrait-of-margaretha-de-geer-wife-of-jacob-trip" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG1674.jpg" data-full="https://www.nationalgallery.org.uk/media/4asbwf5j/n-1674-00-000042-web-hd.jpg?rxy=0.425531914893617,0.26023778071334214&amp;width=800&amp;height=800&amp;v=1dbcbf10b8f7730" alt="Rembrandt, &#x27;Portrait of Jacob Trip&#x27;, about 1661" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Rembrandt, &#x27;Portrait of Jacob Trip&#x27;, about 1661</p>
+    <div class="work-meta">
+      <span class="badge"><b>1661</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG1674</b> ID</span><span class="badge"><b>Rembrandt</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/rembrandt-portrait-of-jacob-trip" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG1675.jpg" data-full="https://www.nationalgallery.org.uk/media/cnqfwsbk/n-1675-00-000070-web-hd.jpg?rxy=0.51241134751773054,0.29112271540469975&amp;width=800&amp;height=800&amp;v=1dbcbf10f4ea210" alt="Rembrandt, &#x27;Portrait of Margaretha de Geer, Wife of Jacob Trip&#x27;, about 1661" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Rembrandt, &#x27;Portrait of Margaretha de Geer, Wife of Jacob Trip&#x27;, about 1661</p>
+    <div class="work-meta">
+      <span class="badge"><b>1661</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG1675</b> ID</span><span class="badge"><b>Rembrandt</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/rembrandt-portrait-of-margaretha-de-geer-wife-of-jacob-trip" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG221.jpg" data-full="https://www.nationalgallery.org.uk/media/uhuhhyde/n-0221-00-000145-xl-hd.jpg?rxy=0.47032967032967032,0.29328621908127206&amp;width=800&amp;height=800&amp;v=1dbcbda28c80db0" alt="Rembrandt, &#x27;Self Portrait at the Age of 63&#x27;, 1669" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Rembrandt, &#x27;Self Portrait at the Age of 63&#x27;, 1669</p>
+    <div class="work-meta">
+      <span class="badge"><b>1669</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG221</b> ID</span><span class="badge"><b>Rembrandt</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/rembrandt-self-portrait-at-the-age-of-63" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 25</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-25.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-25" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">1 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/L1377.jpg" data-full="https://www.nationalgallery.org.uk/media/prchyts5/l-1377-00-000002-web-hd.jpg?width=800&amp;height=800&amp;v=1dbcbd3ae1855d0" alt="Claude Monet, &#x27;Still Life&#x27;, about 1869" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Claude Monet, &#x27;Still Life&#x27;, about 1869</p>
+    <div class="work-meta">
+      <span class="badge"><b>1869</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>L1377</b> ID</span><span class="badge"><b>Claude Monet</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/claude-monet-still-life" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 30</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-30.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-30" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">1 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG2057.jpg" data-full="https://www.nationalgallery.org.uk/media/ug1bac2t/n-2057-00-000088-xl-hd.jpg?rxy=0.61304347826086958,0.34920634920634919&amp;width=800&amp;height=800&amp;v=1dbcbf23e97edf0" alt="Diego Velázquez, &#x27;The Toilet of Venus (&#x27;The Rokeby Venus&#x27;)&#x27;, 1647-51" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Diego Velázquez, &#x27;The Toilet of Venus (&#x27;The Rokeby Venus&#x27;)&#x27;, 1647-51</p>
+    <div class="work-meta">
+      <span class="badge"><b>1647</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG2057</b> ID</span><span class="badge"><b>Diego Velázquez</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/diego-velazquez-the-toilet-of-venus-the-rokeby-venus" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 32</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-32.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-32" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">2 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG172.jpg" data-full="https://www.nationalgallery.org.uk/media/wqpe1kxe/n-0172-00-000104-xl-hd.jpg?rxy=0.5067183485680302,0.37608371124968637&amp;width=800&amp;height=800&amp;v=1dc0c54cad95860" alt="Michelangelo Merisi da Caravaggio, &#x27;The Supper at Emmaus&#x27;, 1601" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Michelangelo Merisi da Caravaggio, &#x27;The Supper at Emmaus&#x27;, 1601</p>
+    <div class="work-meta">
+      <span class="badge"><b>1601</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 2/2</span><span class="badge"><b>NG172</b> ID</span><span class="badge"><b>Michelangelo Merisi da Caravaggio</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/michelangelo-merisi-da-caravaggio-the-supper-at-emmaus" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6389.jpg" data-full="https://www.nationalgallery.org.uk/media/nh1ljh5f/n-6389-00-000031-fs-hd.jpg?rxy=0.43478260869565216,0.69415807560137455&amp;width=800&amp;height=800&amp;v=1dbcca722b42e40" alt="Michelangelo Merisi da Caravaggio, &#x27;Salome receives the Head of John the Baptist&#x27;, about 1609-10" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Michelangelo Merisi da Caravaggio, &#x27;Salome receives the Head of John the Baptist&#x27;, about 1609-10</p>
+    <div class="work-meta">
+      <span class="badge"><b>1609</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 2/2</span><span class="badge"><b>NG6389</b> ID</span><span class="badge"><b>Michelangelo Merisi da Caravaggio</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/michelangelo-merisi-da-caravaggio-salome-receives-the-head-of-john-the-baptist" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 34</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-34.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-34" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">1 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG472.jpg" data-full="https://www.nationalgallery.org.uk/media/rnqpyql2/n-0472-00-000011-web-hd.jpg?rxy=0.50769230769230766,0.54434250764525993&amp;width=800&amp;height=800&amp;v=1dbcbdc74938470" alt="Joseph Mallord William Turner, &#x27;Calais Pier&#x27;, 1803" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Joseph Mallord William Turner, &#x27;Calais Pier&#x27;, 1803</p>
+    <div class="work-meta">
+      <span class="badge"><b>1803</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG472</b> ID</span><span class="badge"><b>Joseph Mallord William Turner</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/joseph-mallord-william-turner-calais-pier" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 40</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-40.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-40" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">2 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG508.jpg" data-full="https://www.nationalgallery.org.uk/media/xhofrhly/n-0508-00-000032-xl-hd.jpg?rxy=0.49834942417622113,0.694511377365763&amp;width=800&amp;height=800&amp;v=1dbcbdcaa2dbf10" alt="Joseph Mallord William Turner, &#x27;Ulysses deriding Polyphemus - Homer&#x27;s Odyssey&#x27;, 1829" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Joseph Mallord William Turner, &#x27;Ulysses deriding Polyphemus - Homer&#x27;s Odyssey&#x27;, 1829</p>
+    <div class="work-meta">
+      <span class="badge"><b>1829</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG508</b> ID</span><span class="badge"><b>Joseph Mallord William Turner</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/joseph-mallord-william-turner-ulysses-deriding-polyphemus-homer-s-odyssey" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG538.jpg" data-full="https://www.nationalgallery.org.uk/media/00ebeihn/n-0538-00-000091-xl-hd.jpg?rxy=0.6523517382413088,0.6219178082191781&amp;width=800&amp;height=800&amp;v=1dbcbdcdcb22e30" alt="Joseph Mallord William Turner, &#x27;Rain, Steam, and Speed - The Great Western Railway&#x27;, 1844" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Joseph Mallord William Turner, &#x27;Rain, Steam, and Speed - The Great Western Railway&#x27;, 1844</p>
+    <div class="work-meta">
+      <span class="badge"><b>1844</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG538</b> ID</span><span class="badge"><b>Joseph Mallord William Turner</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/joseph-mallord-william-turner-rain-steam-and-speed-the-great-western-railway" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 41</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-41.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-41" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">6 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6456.jpg" data-full="https://www.nationalgallery.org.uk/media/xohfio50/n-6456-00-000031-web-hd.jpg?rxy=0.827683615819209,0.34519572953736655&amp;width=800&amp;height=800&amp;v=1dbcca90822cf80" alt="Claude Monet, &#x27;Bathers at La Grenouillère&#x27;, 1869" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Claude Monet, &#x27;Bathers at La Grenouillère&#x27;, 1869</p>
+    <div class="work-meta">
+      <span class="badge"><b>1869</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG6456</b> ID</span><span class="badge"><b>Claude Monet</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/claude-monet-bathers-at-la-grenouillere" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG3951.jpg" data-full="https://www.nationalgallery.org.uk/media/v50ju3yj/n-3951-00-000022-web-hd.jpg?rxy=0.19449439912505706,0.39049387198651769&amp;width=800&amp;height=800&amp;v=1dbcc9e8fade940" alt="Claude Monet, &#x27;The Beach at Trouville&#x27;, 1870" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Claude Monet, &#x27;The Beach at Trouville&#x27;, 1870</p>
+    <div class="work-meta">
+      <span class="badge"><b>1870</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG3951</b> ID</span><span class="badge"><b>Claude Monet</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/claude-monet-the-beach-at-trouville" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6399.jpg" data-full="https://www.nationalgallery.org.uk/media/ivpeqsyh/n-6399-00-000054-xl-hd.jpg?rxy=0.621505376344086,0.52333333333333332&amp;width=800&amp;height=800&amp;v=1dbcca77ba3d1e0" alt="Claude Monet, &#x27;The Thames below Westminster&#x27;, about 1871" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Claude Monet, &#x27;The Thames below Westminster&#x27;, about 1871</p>
+    <div class="work-meta">
+      <span class="badge"><b>1871</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG6399</b> ID</span><span class="badge"><b>Claude Monet</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/claude-monet-the-thames-below-westminster" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6607.jpg" data-full="https://www.nationalgallery.org.uk/media/h1vpu2f2/n-6607-00-000048-xl-hd.jpg?rxy=0.54802259887005644,0.58422939068100355&amp;width=800&amp;height=800&amp;v=1dbccad691edb40" alt="Claude Monet, &#x27;Snow Scene at Argenteuil&#x27;, 1875" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Claude Monet, &#x27;Snow Scene at Argenteuil&#x27;, 1875</p>
+    <div class="work-meta">
+      <span class="badge"><b>1875</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG6607</b> ID</span><span class="badge"><b>Claude Monet</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/claude-monet-snow-scene-at-argenteuil" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6479.jpg" data-full="https://www.nationalgallery.org.uk/media/tqkfrfpk/n-6479-00-000054-xl-hd.jpg?rxy=0.27966101694915252,0.75769230769230766&amp;width=800&amp;height=800&amp;v=1dbcca9d7abee30" alt="Claude Monet, &#x27;The Gare St-Lazare&#x27;, 1877" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Claude Monet, &#x27;The Gare St-Lazare&#x27;, 1877</p>
+    <div class="work-meta">
+      <span class="badge"><b>1877</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG6479</b> ID</span><span class="badge"><b>Claude Monet</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/claude-monet-the-gare-st-lazare" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG3262.jpg" data-full="https://www.nationalgallery.org.uk/media/5fifs2xy/n-3262-00-000022-web-hd.jpg?rxy=0.6077354994435734,0.5057864942207088&amp;width=800&amp;height=800&amp;v=1dbcbfb28173140" alt="Claude Monet, &#x27;Lavacourt under Snow&#x27;, about 1878-81" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Claude Monet, &#x27;Lavacourt under Snow&#x27;, about 1878-81</p>
+    <div class="work-meta">
+      <span class="badge"><b>1878</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG3262</b> ID</span><span class="badge"><b>Claude Monet</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/claude-monet-lavacourt-under-snow" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 42</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-42.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-42" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">2 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6295.jpg" data-full="https://www.nationalgallery.org.uk/media/axjatmhx/n-6295-00-000027-xl-hd.jpg?rxy=0.34408602150537637,0.28215767634854771&amp;width=800&amp;height=800&amp;v=1dbcca563a9bca0" alt="Hilaire-Germain-Edgar Degas, &#x27;After the Bath, Woman drying herself&#x27;, about 1890-5" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Hilaire-Germain-Edgar Degas, &#x27;After the Bath, Woman drying herself&#x27;, about 1890-5</p>
+    <div class="work-meta">
+      <span class="badge"><b>1890</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG6295</b> ID</span><span class="badge"><b>Hilaire-Germain-Edgar Degas</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/hilaire-germain-edgar-degas-after-the-bath-woman-drying-herself" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6581.jpg" data-full="https://www.nationalgallery.org.uk/media/t31azzzd/n-6581-00-000015-web-hd.jpg?rxy=0.40112994350282488,0.20224719101123595&amp;width=800&amp;height=800&amp;v=1dbccacccb33760" alt="Hilaire-Germain-Edgar Degas, &#x27;Ukrainian Dancers&#x27;, about 1899" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Hilaire-Germain-Edgar Degas, &#x27;Ukrainian Dancers&#x27;, about 1899</p>
+    <div class="work-meta">
+      <span class="badge"><b>1899</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG6581</b> ID</span><span class="badge"><b>Hilaire-Germain-Edgar Degas</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/hilaire-germain-edgar-degas-ukrainian-dancers" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 43</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-43.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-43" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">6 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG4121.jpg" data-full="https://www.nationalgallery.org.uk/media/gw3bmtta/n-4121-00-000051-xl-hd.jpg?rxy=0.3084209370769014,0.12684706887003047&amp;width=800&amp;height=800&amp;v=1dbcc9f44849e90" alt="Hilaire-Germain-Edgar Degas, &#x27;Miss La La at the Cirque Fernando&#x27;, 1879" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Hilaire-Germain-Edgar Degas, &#x27;Miss La La at the Cirque Fernando&#x27;, 1879</p>
+    <div class="work-meta">
+      <span class="badge"><b>1879</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG4121</b> ID</span><span class="badge"><b>Hilaire-Germain-Edgar Degas</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/hilaire-germain-edgar-degas-miss-la-la-at-the-cirque-fernando" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG3863.jpg" data-full="https://www.nationalgallery.org.uk/media/pqsbysn3/n-3863-00-000130-xl-hd.jpg?rxy=0.514792899408284,0.41459627329192544&amp;width=800&amp;height=800&amp;v=1dbcc9d3ea31ad0" alt="Vincent van Gogh, &#x27;Sunflowers&#x27;, 1888" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Vincent van Gogh, &#x27;Sunflowers&#x27;, 1888</p>
+    <div class="work-meta">
+      <span class="badge"><b>1888</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG3863</b> ID</span><span class="badge"><b>Vincent van Gogh</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG3862.jpg" data-full="https://www.nationalgallery.org.uk/media/rjpd2aod/n-3862-00-000042-web-hd.jpg?rxy=0.45546558704453444,0.41009463722397477&amp;width=800&amp;height=800&amp;v=1dbcc9d2d6c5dd0" alt="Vincent van Gogh, &#x27;Van Gogh&#x27;s Chair&#x27;, 1888" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Vincent van Gogh, &#x27;Van Gogh&#x27;s Chair&#x27;, 1888</p>
+    <div class="work-meta">
+      <span class="badge"><b>1888</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG3862</b> ID</span><span class="badge"><b>Vincent van Gogh</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-van-gogh-s-chair" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG3861.jpg" data-full="https://www.nationalgallery.org.uk/media/b2gj4uld/n-3861-00-000081-xl-hd.jpg?rxy=0.5956607495069034,0.47890818858560796&amp;width=800&amp;height=800&amp;v=1dbcc9d29b214f0" alt="Vincent van Gogh, &#x27;A Wheatfield, with Cypresses&#x27;, 1889" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Vincent van Gogh, &#x27;A Wheatfield, with Cypresses&#x27;, 1889</p>
+    <div class="work-meta">
+      <span class="badge"><b>1889</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG3861</b> ID</span><span class="badge"><b>Vincent van Gogh</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-a-wheatfield-with-cypresses" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/L1333.jpg" data-full="https://www.nationalgallery.org.uk/media/qgnbvrni/l-1333-00-000004-fs-hd.jpg?width=800&amp;height=800&amp;v=1dbcbd3704ca210" alt="Vincent van Gogh, &#x27;Landscape with Ploughman&#x27;, 1889" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Vincent van Gogh, &#x27;Landscape with Ploughman&#x27;, 1889</p>
+    <div class="work-meta">
+      <span class="badge"><b>1889</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>L1333</b> ID</span><span class="badge"><b>Vincent van Gogh</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-landscape-with-ploughman" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG4168.jpg" data-full="https://www.nationalgallery.org.uk/media/d3iei3ui/n-4168-00-000024-xl-hd.jpg?rxy=0.77767335520711389,0.29792068070699085&amp;width=800&amp;height=800&amp;v=1dbcc9f80395930" alt="Hilaire-Germain-Edgar Degas, &#x27;Ballet Dancers&#x27;, about 1890-1900" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Hilaire-Germain-Edgar Degas, &#x27;Ballet Dancers&#x27;, about 1890-1900</p>
+    <div class="work-meta">
+      <span class="badge"><b>1890</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG4168</b> ID</span><span class="badge"><b>Hilaire-Germain-Edgar Degas</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/hilaire-germain-edgar-degas-ballet-dancers" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 44</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-44.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-44" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">4 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG4135.jpg" data-full="https://www.nationalgallery.org.uk/media/k45medif/n-4135-00-000032-xl-hd.jpg?rxy=0.50455793396210458,0.47417196342480072&amp;width=800&amp;height=800&amp;v=1dbcc9f49cb05b0" alt="Paul Cezanne, &#x27;Self Portrait&#x27;, about 1880-1" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Paul Cezanne, &#x27;Self Portrait&#x27;, about 1880-1</p>
+    <div class="work-meta">
+      <span class="badge"><b>1880</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG4135</b> ID</span><span class="badge"><b>Paul Cezanne</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/paul-cezanne-self-portrait" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6457.jpg" data-full="https://www.nationalgallery.org.uk/media/lf3pvy5p/n-6457-00-000009-web-hd.jpg?rxy=0.47740112994350281,0.60879629629629628&amp;width=800&amp;height=800&amp;v=1dbcca90adf3060" alt="Paul Cezanne, &#x27;Landscape with Poplars&#x27;, about 1885-7" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Paul Cezanne, &#x27;Landscape with Poplars&#x27;, about 1885-7</p>
+    <div class="work-meta">
+      <span class="badge"><b>1885</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG6457</b> ID</span><span class="badge"><b>Paul Cezanne</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/paul-cezanne-landscape-with-poplars" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6525.jpg" data-full="https://www.nationalgallery.org.uk/media/oerdoac4/n-6525-00-000009-web-hd.jpg?rxy=0.46881720430107526,0.55498281786941583&amp;width=800&amp;height=800&amp;v=1dbccab3be37d40" alt="Paul Cezanne, &#x27;Avenue at Chantilly&#x27;, 1888" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Paul Cezanne, &#x27;Avenue at Chantilly&#x27;, 1888</p>
+    <div class="work-meta">
+      <span class="badge"><b>1888</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG6525</b> ID</span><span class="badge"><b>Paul Cezanne</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/paul-cezanne-avenue-at-chantilly" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6342.jpg" data-full="https://www.nationalgallery.org.uk/media/3iioifcj/n-6342-00-000010-web-hd.jpg?rxy=0.513978494623656,0.48310810810810811&amp;width=800&amp;height=800&amp;v=1dbcca60de6d270" alt="Paul Cezanne, &#x27;The Grounds of the Château Noir&#x27;, about 1900-4" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Paul Cezanne, &#x27;The Grounds of the Château Noir&#x27;, about 1900-4</p>
+    <div class="work-meta">
+      <span class="badge"><b>1900</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG6342</b> ID</span><span class="badge"><b>Paul Cezanne</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/paul-cezanne-the-grounds-of-the-chateau-noir" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 45</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-45.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-45" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">2 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6359.jpg" data-full="https://www.nationalgallery.org.uk/media/15zjbyq3/n-6359-00-000043-xl-hd.jpg?rxy=0.41290322580645161,0.54285714285714282&amp;width=800&amp;height=800&amp;v=1dbcca66ef24450" alt="Paul Cezanne, &#x27;Bathers (Les Grandes Baigneuses)&#x27;, about 1894-1905" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Paul Cezanne, &#x27;Bathers (Les Grandes Baigneuses)&#x27;, about 1894-1905</p>
+    <div class="work-meta">
+      <span class="badge"><b>1894</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG6359</b> ID</span><span class="badge"><b>Paul Cezanne</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/paul-cezanne-bathers-les-grandes-baigneuses" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG4865.jpg" data-full="https://www.nationalgallery.org.uk/media/je2d12ok/n-4865-00-000035-fs-hd.jpg?rxy=0.46236559139784944,0.46666666666666667&amp;width=800&amp;height=800&amp;v=1dbcca16236ef90" alt="Hilaire-Germain-Edgar Degas, &#x27;Combing the Hair (&#x27;La Coiffure&#x27;)&#x27;, about 1896" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Hilaire-Germain-Edgar Degas, &#x27;Combing the Hair (&#x27;La Coiffure&#x27;)&#x27;, about 1896</p>
+    <div class="work-meta">
+      <span class="badge"><b>1896</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG4865</b> ID</span><span class="badge"><b>Hilaire-Germain-Edgar Degas</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/hilaire-germain-edgar-degas-combing-the-hair-la-coiffure" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 46</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-46.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-46" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">6 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/L1376.jpg" data-full="https://www.nationalgallery.org.uk/media/b2wjcmb2/l-1376-00-000002-web-hd.jpg?width=800&amp;height=800&amp;v=1dbcbd3ac01d1e0" alt="Claude Monet, &#x27;Grainstack (Sunset: winter)&#x27;, 1890-1" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Claude Monet, &#x27;Grainstack (Sunset: winter)&#x27;, 1890-1</p>
+    <div class="work-meta">
+      <span class="badge"><b>1890</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>L1376</b> ID</span><span class="badge"><b>Claude Monet</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/claude-monet-grainstack-sunset-winter" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG4240.jpg" data-full="https://www.nationalgallery.org.uk/media/lqobdtst/n-4240-00-000069-xl-hd.jpg?rxy=0.49032258064516127,0.39467849223946783&amp;width=800&amp;height=800&amp;v=1dbcc9fd2cb5950" alt="Claude Monet, &#x27;The Water-Lily Pond&#x27;, 1899" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Claude Monet, &#x27;The Water-Lily Pond&#x27;, 1899</p>
+    <div class="work-meta">
+      <span class="badge"><b>1899</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG4240</b> ID</span><span class="badge"><b>Claude Monet</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/claude-monet-the-water-lily-pond" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6608.jpg" data-full="https://www.nationalgallery.org.uk/media/50ieqh4e/n-6608-00-000008-fs-hd.jpg?rxy=0.4463276836158192,0.49820788530465948&amp;width=800&amp;height=800&amp;v=1dbccad6da06bc0" alt="Claude Monet, &#x27;Water-Lilies, Setting Sun&#x27;, about 1907" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Claude Monet, &#x27;Water-Lilies, Setting Sun&#x27;, about 1907</p>
+    <div class="work-meta">
+      <span class="badge"><b>1907</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG6608</b> ID</span><span class="badge"><b>Claude Monet</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/claude-monet-water-lilies-setting-sun" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6383.jpg" data-full="https://www.nationalgallery.org.uk/media/yykht1rp/n-6383-00-000014-web-hd.jpg?rxy=0.73913043478260865,0.52505446623093677&amp;width=800&amp;height=800&amp;v=1dbcca70de1d3f0" alt="Claude Monet, &#x27;Irises&#x27;, about 1914-17" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Claude Monet, &#x27;Irises&#x27;, about 1914-17</p>
+    <div class="work-meta">
+      <span class="badge"><b>1914</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG6383</b> ID</span><span class="badge"><b>Claude Monet</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/claude-monet-irises" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6343.jpg" data-full="https://www.nationalgallery.org.uk/media/ir0cwnrm/n-6343-00-000010-fs-hd.jpg?rxy=0.34193548387096773,0.35087719298245612&amp;width=800&amp;height=800&amp;v=1dbcca610028680" alt="Claude Monet, &#x27;Water-Lilies&#x27;, after 1916" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Claude Monet, &#x27;Water-Lilies&#x27;, after 1916</p>
+    <div class="work-meta">
+      <span class="badge"><b>1916</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG6343</b> ID</span><span class="badge"><b>Claude Monet</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/claude-monet-water-lilies" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/L772.jpg" data-full="https://www.nationalgallery.org.uk/media/q2kgtf1q/l-0772-00-000003-web-hd.jpg?width=800&amp;height=800&amp;v=1dbcbd241b6c7b0" alt="Claude Monet, &#x27;Water-lilies&#x27;, 1917" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Claude Monet, &#x27;Water-lilies&#x27;, 1917</p>
+    <div class="work-meta">
+      <span class="badge"><b>1917</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>L772</b> ID</span><span class="badge"><b>Claude Monet</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/claude-monet-water-lilies-1" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 51</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-51.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-51" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">2 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG1093.jpg" data-full="https://www.nationalgallery.org.uk/media/14anh2bg/n-1093-00-000373-xl-hd.jpg?rxy=0.4817204301075269,0.40242261103633914&amp;width=800&amp;height=800&amp;v=1dbcbeac5b1a0e0" alt="Leonardo da Vinci, &#x27;The Virgin of the Rocks&#x27;, about 1491/2-9 and 1506-8" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Leonardo da Vinci, &#x27;The Virgin of the Rocks&#x27;, about 1491/2-9 and 1506-8</p>
+    <div class="work-meta">
+      <span class="badge"><b>1491</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG1093</b> ID</span><span class="badge"><b>Leonardo da Vinci</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/leonardo-da-vinci-the-virgin-of-the-rocks" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG809.jpg" data-full="https://www.nationalgallery.org.uk/media/pedam551/n-0809-00-000130-xl-hd.jpg?rxy=0.62555066079295152,0.19381107491856678&amp;width=800&amp;height=800&amp;v=1dbcbe548601f90" alt="Michelangelo, &#x27;&#x27;The Manchester Madonna&#x27;&#x27;, about 1494" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Michelangelo, &#x27;&#x27;The Manchester Madonna&#x27;&#x27;, about 1494</p>
+    <div class="work-meta">
+      <span class="badge"><b>1494</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG809</b> ID</span><span class="badge"><b>Michelangelo</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/michelangelo-the-manchester-madonna" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 51a</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-51a.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-51a" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">1 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG6337.jpg" data-full="https://www.nationalgallery.org.uk/media/mk4hjuxg/n-6337-00-000153-fs-hd.jpg?rxy=0.45161290322580644,0.18327974276527331&amp;width=800&amp;height=800&amp;v=1dbcca5fd0ab890" alt="Leonardo da Vinci, &#x27;The Burlington House Cartoon&#x27;, about 1506-8" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Leonardo da Vinci, &#x27;The Burlington House Cartoon&#x27;, about 1506-8</p>
+    <div class="work-meta">
+      <span class="badge"><b>1506</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG6337</b> ID</span><span class="badge"><b>Leonardo da Vinci</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/leonardo-da-vinci-the-burlington-house-cartoon" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 58</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-58.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-58" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">1 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="https://www.nationalgallery.org.uk/v2/img/images/ImageUnavailableThumbnail.png" data-full="https://www.nationalgallery.org.uk/v2/img/images/ImageUnavailableThumbnail.png" alt="Simone Martini, &#x27;Saint John the Evangelist&#x27;, 1320" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Simone Martini, &#x27;Saint John the Evangelist&#x27;, 1320</p>
+    <div class="work-meta">
+      <span class="badge"><b>1320</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 2/2</span><span class="badge"><b>L1382</b> ID</span><span class="badge"><b>Simone Martini</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/simone-martini-saint-john-the-evangelist" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 61</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-61.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-61" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">2 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG3943.jpg" data-full="https://www.nationalgallery.org.uk/media/zunfqh1z/n-3943-00-000190-xl-hd.jpg?cc=0.16802283653846153,0.09900048234616347,0.16802283653846153,0.5134068427701918&amp;width=800&amp;height=800&amp;v=1dbcc9e6f0529b0" alt="Raphael, &#x27;The Mond Crucifixion&#x27;, about 1502-3" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Raphael, &#x27;The Mond Crucifixion&#x27;, about 1502-3</p>
+    <div class="work-meta">
+      <span class="badge"><b>1502</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG3943</b> ID</span><span class="badge"><b>Raphael</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/raphael-the-mond-crucifixion" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG168.jpg" data-full="https://www.nationalgallery.org.uk/media/4jddwe3k/n-0168-00-000171-xl-hd.jpg?rxy=0.49613357968931776,0.18385351794643387&amp;width=800&amp;height=800&amp;v=1dbcbd8e9d8b6f0" alt="Raphael, &#x27;Saint Catherine of Alexandria&#x27;, about 1507" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Raphael, &#x27;Saint Catherine of Alexandria&#x27;, about 1507</p>
+    <div class="work-meta">
+      <span class="badge"><b>1507</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 1/2</span><span class="badge"><b>NG168</b> ID</span><span class="badge"><b>Raphael</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/raphael-saint-catherine-of-alexandria" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+<details class="tour-room">
+  <summary>
+    <div class="room-left">
+      <p class="room-name">Room 64</p>
+      <div class="room-meta">
+        <span class="badge"><a href="../rooms/room-64.html">Room details</a></span>
+        <span class="badge"><a href="https://www.nationalgallery.org.uk/visiting/floorplans/level-2/room-64" target="_blank" rel="noreferrer">Source</a></span>
+      </div>
+    </div>
+    <div class="count">1 works</div>
+  </summary>
+  <div class="tour-list">
+    
+<div class="work-row">
+  <img class="work-thumb zoomable" src="../assets/img/thumb/NG598.jpg" data-full="https://www.nationalgallery.org.uk/media/1bqdiz2b/n-0598-00-000038-web-hd.jpg?rxy=0.539647577092511,0.26499302649930268&amp;width=800&amp;height=800&amp;v=1dbcbde3ab65e10" alt="Sandro Botticelli, &#x27;Saint Francis of Assisi with Angels&#x27;, about 1475-80" loading="lazy" decoding="async" />
+  <div>
+    <p class="work-title">Sandro Botticelli, &#x27;Saint Francis of Assisi with Angels&#x27;, about 1475-80</p>
+    <div class="work-meta">
+      <span class="badge"><b>1475</b> year</span><span class="badge"><b>5/5</b> rating</span><span class="badge">AHP 2/2</span><span class="badge">Formal 2/2</span><span class="badge">Expr 2/2</span><span class="badge"><b>NG598</b> ID</span><span class="badge"><b>Sandro Botticelli</b></span><span class="badge"><a href="https://www.nationalgallery.org.uk/paintings/sandro-botticelli-saint-francis-of-assisi-with-angels" target="_blank" rel="noreferrer">Work page</a></span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</details>
+
+	  <div class="footer">Source dataset: out/level-2.rooms.json</div>
+	</div>
+	<div class="lightbox" id="lb" aria-hidden="true">
+  <div class="lb-bar">
+    <div>Tap image to toggle zoom. Drag/scroll when zoomed.</div>
+    <div style="display:flex; gap:10px; align-items:center;">
+      <button class="lb-btn" type="button" id="lbZoom">Zoom 2x</button>
+      <button class="lb-btn" type="button" id="lbClose">Close</button>
+    </div>
+  </div>
+  <div class="lb-canvas" id="lbCanvas">
+    <img class="lb-img" id="lbImg" alt="Artwork" />
+  </div>
+</div>
+<script>
+  const lb = document.getElementById('lb');
+  const lbImg = document.getElementById('lbImg');
+  const lbCanvas = document.getElementById('lbCanvas');
+  const btnClose = document.getElementById('lbClose');
+  const btnZoom = document.getElementById('lbZoom');
+  function openLb(src){
+    lb.classList.add('open');
+    lb.setAttribute('aria-hidden','false');
+    lbCanvas.classList.remove('zoom2');
+    btnZoom.textContent = 'Zoom 2x';
+    lbImg.src = src;
+    lbCanvas.scrollTop = 0;
+    lbCanvas.scrollLeft = 0;
+  }
+  function closeLb(){
+    lb.classList.remove('open');
+    lb.setAttribute('aria-hidden','true');
+    lbImg.removeAttribute('src');
+  }
+  document.addEventListener('click', (e) => {
+    const t = e.target;
+    if (t && t.classList && t.classList.contains('zoomable')) {
+      e.preventDefault();
+      e.stopPropagation();
+      openLb(t.getAttribute('data-full') || t.getAttribute('src'));
+      return;
+    }
+    if (t === lb) closeLb();
+  }, { passive: false });
+  btnClose.addEventListener('click', closeLb);
+  btnZoom.addEventListener('click', () => {
+    const z = lbCanvas.classList.toggle('zoom2');
+    btnZoom.textContent = z ? 'Zoom 1x' : 'Zoom 2x';
+  });
+  lbImg.addEventListener('click', () => {
+    const z = lbCanvas.classList.toggle('zoom2');
+    btnZoom.textContent = z ? 'Zoom 1x' : 'Zoom 2x';
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeLb();
+  });
+</script>
+	
+  </body>
+</html>

@@ -22,6 +22,10 @@
 	  <div class="tools">
 	    <div class="tool-row">
 	      <a class="back" href="../index.html">Back to rooms</a>
+	      <span class="pill langpick" data-lang="local"><a href="#">Local</a></span>
+	      <span class="pill langpick" data-lang="en"><a href="#">English</a></span>
+	      <span class="pill langpick" data-lang="zh"><a href="#">中文</a></span>
+	      <span class="pill" id="toggleZhTitle"><a href="#">ZH titles</a></span>
 	      <span class="pill"><a href="https://collections.louvre.fr/en/recherche?location%5B0%5D=291788" target="_blank" rel="noreferrer">Source page</a></span>
 	    </div>
 	  </div>
@@ -37,6 +41,7 @@
     <img class="thumb zoomable" src="https://collections.louvre.fr/media/cache/small/0000000021/0000117422/0000239430_OG.JPG" data-full="https://collections.louvre.fr/media/cache/large/0000000021/0000117422/0000239430_OG.JPG" alt="Grille à deux vantaux du château de Maisons-Laffite" loading="lazy" decoding="async" />
     <div>
       <p class="wtitle">Grille à deux vantaux du château de Maisons-Laffite</p>
+      <p class="wtitle-zh" data-has-zh="0"></p>
       <div class="wmeta"><span><b>Date</b> 1646 / 1650 (2e tiers du XVIIe siècle)</span><span><b>ID</b> cl010117422</span><span><b>Link</b> <a href="https://collections.louvre.fr/en/ark:/53355/cl010117422" target="_blank" rel="noreferrer">collections.louvre.fr</a></span><span><span class="rating" title="Rubric (heuristic): Art-historical 0/2, Formal 0/2, Expressive 0/2">★★☆☆☆ Rating 2/5</span><span class="dims" title="Rubric (heuristic): Art-historical 0/2, Formal 0/2, Expressive 0/2">AHP 0/2 · Formal 0/2 · Expressive 0/2</span></span></div>
     </div>
   </summary>
@@ -44,12 +49,20 @@
     <div class="cols">
       <div class="panel">
         <h3>Overview</h3>
-        <div class="prose"><p>Grille à deux vantaux du château de Maisons-Laffitte à l&#x27;entrée de la Chapelle
+        <div class="prose">
+          <div class="lang lang-local"><p>Grille à deux vantaux du château de Maisons-Laffitte à l&#x27;entrée de la Chapelle
 France, entre 1646 et 1650</p></div>
+          <div class="lang lang-en"><p>(No English overview yet)</p></div>
+          <div class="lang lang-zh"><p>(暂无中文简介)</p></div>
+        </div>
       </div>
       <div class="panel">
         <h3>In-depth</h3>
-        <div class="prose"><p><b>Louvre (History):</b></p><p>Historique : exécutée pour le vestibule du château de Maisons ; démontée en 1791-1792 au moment de la mise sous séquestre du château (propriété du comte d&#x27;Artois) ; acquise par le serrurier Pierre Dumier ; remise par ce dernier au Museum central des arts le 5 janvier 1797. Remontée en 1819 pour clore la salle de la Chapelle du pavillon de l&#x27;Horloge.</p></div>
+        <div class="prose">
+          <div class="lang lang-local"><p><b>Louvre (History):</b></p><p>Historique : exécutée pour le vestibule du château de Maisons ; démontée en 1791-1792 au moment de la mise sous séquestre du château (propriété du comte d&#x27;Artois) ; acquise par le serrurier Pierre Dumier ; remise par ce dernier au Museum central des arts le 5 janvier 1797. Remontée en 1819 pour clore la salle de la Chapelle du pavillon de l&#x27;Horloge.</p></div>
+          <div class="lang lang-en"><p>(No English in-depth yet)</p></div>
+          <div class="lang lang-zh"><p>(暂无中文延伸)</p></div>
+        </div>
       </div>
     </div>
     <div class="facts"><dl><dt>ID</dt><dd>cl010117422</dd><dt>Date made</dt><dd>1646 / 1650 (2e tiers du XVIIe siècle)</dd><dt>Medium</dt><dd>Matériau : fer
@@ -60,7 +73,7 @@ Technique : repoussé = repoussage (techniques métal)</dd><dt>Dimensions</dt><d
 </details>
 
   </div>
-	  <div class="footer">Generated from out/louvre.rooms.enriched.json</div>
+	  <div class="footer">Generated from out/louvre.rooms.enriched.i18n.json</div>
 	</div>
 	<div class="lightbox" id="lb" aria-hidden="true">
   <div class="lb-bar">
@@ -116,6 +129,44 @@ Technique : repoussé = repoussage (techniques métal)</dd><dt>Dimensions</dt><d
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeLb();
   });
+</script>
+<script>
+  // Persisted language toggle across the whole atlas (index, room pages, tours).
+  const langButtons = Array.from(document.querySelectorAll('.langpick'));
+  function setLang(lang) {
+    const v = (lang || 'local');
+    document.documentElement.setAttribute('data-lang', v);
+    try { localStorage.setItem('ova_lang', v); } catch(e){}
+    for (const b of langButtons) {
+      b.classList.toggle('active', (b.getAttribute('data-lang')||'') === v);
+    }
+  }
+  const savedLang = (() => { try { return localStorage.getItem('ova_lang') || ''; } catch(e){ return ''; } })();
+  setLang(savedLang || 'local');
+  for (const b of langButtons) {
+    b.addEventListener('click', (e) => {
+      e.preventDefault();
+      setLang(b.getAttribute('data-lang')||'local');
+    });
+  }
+
+  // Optional: show Chinese titles as a secondary line under the local title.
+  const zhTitleBtn = document.getElementById('toggleZhTitle');
+  function setZhTitles(on) {
+    const v = on ? '1' : '0';
+    document.documentElement.setAttribute('data-zh-titles', v);
+    try { localStorage.setItem('ova_zh_titles', v); } catch(e){}
+    if (zhTitleBtn) zhTitleBtn.classList.toggle('active', on);
+  }
+  const savedZh = (() => { try { return localStorage.getItem('ova_zh_titles') || '0'; } catch(e){ return '0'; } })();
+  setZhTitles(savedZh === '1');
+  if (zhTitleBtn) {
+    zhTitleBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const cur = (document.documentElement.getAttribute('data-zh-titles') || '0') === '1';
+      setZhTitles(!cur);
+    });
+  }
 </script>
 	
   </body>

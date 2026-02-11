@@ -22,6 +22,10 @@
 	  <div class="tools">
 	    <div class="tool-row">
 	      <a class="back" href="../index.html">Back to rooms</a>
+	      <span class="pill langpick" data-lang="local"><a href="#">Local</a></span>
+	      <span class="pill langpick" data-lang="en"><a href="#">English</a></span>
+	      <span class="pill langpick" data-lang="zh"><a href="#">中文</a></span>
+	      <span class="pill" id="toggleZhTitle"><a href="#">ZH titles</a></span>
 	      <span class="pill"><a href="https://collections.louvre.fr/en/recherche?location%5B0%5D=291677" target="_blank" rel="noreferrer">Source page</a></span>
 	    </div>
 	  </div>
@@ -33,7 +37,7 @@
   <div class="works">
     <div class="card"><div class="hd"><p class="t">No works listed</p></div><div class="bd">This room page did not expose a structured &quot;Works in this room&quot; list at scrape time.</div></div>
   </div>
-	  <div class="footer">Generated from out/louvre.rooms.enriched.json</div>
+	  <div class="footer">Generated from out/louvre.rooms.enriched.i18n.json</div>
 	</div>
 	<div class="lightbox" id="lb" aria-hidden="true">
   <div class="lb-bar">
@@ -89,6 +93,44 @@
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeLb();
   });
+</script>
+<script>
+  // Persisted language toggle across the whole atlas (index, room pages, tours).
+  const langButtons = Array.from(document.querySelectorAll('.langpick'));
+  function setLang(lang) {
+    const v = (lang || 'local');
+    document.documentElement.setAttribute('data-lang', v);
+    try { localStorage.setItem('ova_lang', v); } catch(e){}
+    for (const b of langButtons) {
+      b.classList.toggle('active', (b.getAttribute('data-lang')||'') === v);
+    }
+  }
+  const savedLang = (() => { try { return localStorage.getItem('ova_lang') || ''; } catch(e){ return ''; } })();
+  setLang(savedLang || 'local');
+  for (const b of langButtons) {
+    b.addEventListener('click', (e) => {
+      e.preventDefault();
+      setLang(b.getAttribute('data-lang')||'local');
+    });
+  }
+
+  // Optional: show Chinese titles as a secondary line under the local title.
+  const zhTitleBtn = document.getElementById('toggleZhTitle');
+  function setZhTitles(on) {
+    const v = on ? '1' : '0';
+    document.documentElement.setAttribute('data-zh-titles', v);
+    try { localStorage.setItem('ova_zh_titles', v); } catch(e){}
+    if (zhTitleBtn) zhTitleBtn.classList.toggle('active', on);
+  }
+  const savedZh = (() => { try { return localStorage.getItem('ova_zh_titles') || '0'; } catch(e){ return '0'; } })();
+  setZhTitles(savedZh === '1');
+  if (zhTitleBtn) {
+    zhTitleBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const cur = (document.documentElement.getAttribute('data-zh-titles') || '0') === '1';
+      setZhTitles(!cur);
+    });
+  }
 </script>
 	
   </body>

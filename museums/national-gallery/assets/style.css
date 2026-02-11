@@ -24,6 +24,22 @@ body{
 img, svg, video, canvas{ max-width:100%; height:auto; }
 a{ color: var(--accent); text-decoration: none; }
 a:hover{ text-decoration: underline; }
+.pill.active, .btn.active{
+  border-color: rgba(12,107,90,.55);
+  background: rgba(12,107,90,.14);
+  color: var(--ink);
+}
+.lang{ display:none; }
+html[data-lang="local"] .lang-local{ display:block; }
+html[data-lang="en"] .lang-en{ display:block; }
+html[data-lang="zh"] .lang-zh{ display:block; }
+.wtitle-zh{
+  display:none;
+  margin: 6px 0 0;
+  font: 700 13px/1.2 var(--serif);
+  color: var(--muted);
+}
+html[data-zh-titles="1"] .wtitle-zh[data-has-zh="1"]{ display:block; }
 .rating{ font: 700 12px/1 var(--sans); color: #7a4b00; }
 .dims{ font: 600 11px/1 var(--sans); color: var(--muted); }
 .wrap{ max-width: 1180px; margin: 0 auto; padding: 28px 18px 60px; }

@@ -131,7 +131,7 @@ details.work summary{
   grid-template-columns: 84px 1fr;
   gap: 12px;
   padding: 12px;
-  align-items:center;
+  align-items:flex-start;
 }
 details.work summary > *{ min-width:0; }
 details.work summary::-webkit-details-marker{ display:none; }
@@ -239,6 +239,29 @@ details.work summary::-webkit-details-marker{ display:none; }
   }
 }
 
+/* Small phones: stack work summary thumb above text, facts dt/dd, reduce padding */
+@media (max-width: 480px){
+  .wrap{ padding-left: 14px; padding-right: 14px; }
+  .room-title{ font-size: 22px; }
+  details.work summary{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  details.work summary .thumb{
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    aspect-ratio: 1;
+    justify-self: center;
+  }
+  .facts dl{
+    grid-template-columns: 1fr;
+    gap: 2px 0;
+  }
+  .facts dt{ grid-column: 1; }
+  .facts dd{ grid-column: 1; }
+}
+
 /* Make the header controls wrap cleanly on mid-size mobile/tablet widths. */
 @media (max-width: 920px){
   .tool-row{
@@ -282,7 +305,10 @@ details.work summary::-webkit-details-marker{ display:none; }
 .lb-btn:active{ transform: translateY(1px); }
 .lb-canvas{
   position: absolute;
-  inset: 52px 10px 10px;
+  top: 52px;
+  right: max(10px, env(safe-area-inset-right));
+  bottom: max(10px, env(safe-area-inset-bottom));
+  left: max(10px, env(safe-area-inset-left));
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   border-radius: 14px;

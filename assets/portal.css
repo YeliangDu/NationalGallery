@@ -12,7 +12,7 @@
   --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 *{ box-sizing:border-box; }
-html,body{ height:100%; }
+html,body{ height:100%; max-width:100%; overflow-x:hidden; }
 body{
   margin:0;
   color: var(--ink);
@@ -122,4 +122,9 @@ a:hover{ text-decoration: underline; }
 @media (max-width: 720px){
   .hero{ flex-direction: column; align-items: stretch; }
   .pillrow{ justify-content:flex-start; }
+}
+@media (max-width: 480px){
+  .wrap{ padding: 24px 14px 50px; }
+  .hero h1{ font-size: 18px; }
+  .grid{ grid-template-columns: 1fr; }
 }
